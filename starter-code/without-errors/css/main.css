@@ -5,11 +5,11 @@
   box-sizing: border-box;
 }
 
-.clearfix:after {
+/* .clearfix:after {
   display: table;
   clear: both;
   content: "";
-}
+} */
 
 /* ==========================================================================
    Author's custom styles
@@ -31,20 +31,32 @@ body {
 /* Layout
    ================================================================ */
 #main {
-  float: left;
+  /* float: left; */
   width: 66.66667%;
 }
 
 #sidebar {
-  float: right;
+  /* float: right; */
   width: 29%;
   margin-top: 108px;
   color: #888;
 }
-
+/* main and aside sit side by side */
+/* main and aside push to the edge */
+/* #mainAsideFlex {
+  display: flex;
+  justify-content: space-between;
+} */
+/* all li sit side by side */
+/* #headerNavFlex {
+  display: flex;
+} */
 .wrapper {
   width: 1080px;
   margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 img {
@@ -90,7 +102,6 @@ h3 {
 }
 
 
-
 /* Text Styles
    ================================================================ */
 .more {
@@ -115,8 +126,6 @@ p {
 }
 
 
-
-
 /* Header
    ================================================================ */
 header h1 {
@@ -135,12 +144,13 @@ header nav ul {
   margin: 0;
   padding: 0;
   list-style: none;
+  display: flex;
 }
 
 /* Footer
    ================================================================ */
 footer {
-  clear: both;
+  /* clear: both; */
   color: #bbb;
 }
 
@@ -148,7 +158,7 @@ footer {
 /* Navigation
    ================================================================ */
 header nav ul li {
-  float: left;
+  /* float: left; */
   width: 16.66667%;
   margin: 0;
   padding: 0;

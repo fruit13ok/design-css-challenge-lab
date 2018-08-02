@@ -19,3 +19,24 @@ There are two sets of starter code provided: [one with errors](starter-code/with
 Here are the mockups you should reference while building your site. If you're using the code with errors, this will be a helpful reference for you! The design and layout of the site should not change once you've corrected all code errors and converted from float to flex.
 
 ![mockup](assets/mockup.png)
+
+#way 1 change html add a div to wrap main and aside, the big picture is this div only have 2 elements to flex
+##1
+use without-error
+##2
+comment out all float (leave the :first-letter float).
+comment out clear too
+now everything stack on top of each other.
+##3
+make flex for main and aside.
+in html create <div id="mainAsideFlex"> to contain main and aside
+    display: flex;
+    justify-content: space-between;
+in css create #mainAsideFlex
+    display: flex;
+#way 2 (correct way) only add 3 line to wrapper class, and flex the nav
+##1
+in wrapper
+display: flex;
+justify-content: space-between;
+flex-wrap: wrap;
